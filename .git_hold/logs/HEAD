@@ -1,0 +1,87 @@
+0000000000000000000000000000000000000000 5038ed805ba5631088edeaab19c7eb434ab3f88a Chris Dewinetz <queror@hotmail.com> 1360472872 -0800	clone: from git://drupalcode.org/project/drupal.git
+5038ed805ba5631088edeaab19c7eb434ab3f88a 1d4604da252f0e6e19339957ec214388f61b908d Chris Dewinetz <queror@hotmail.com> 1360472962 -0800	checkout: moving from 8.x to 7.19
+1d4604da252f0e6e19339957ec214388f61b908d 1d4604da252f0e6e19339957ec214388f61b908d Chris Dewinetz <queror@hotmail.com> 1360473048 -0800	checkout: moving from 1d4604da252f0e6e19339957ec214388f61b908d to beccibase
+1d4604da252f0e6e19339957ec214388f61b908d 7e5844fa31f588007f270313f53e9f4b1b0e7276 Chris Dewinetz <queror@hotmail.com> 1361122771 -0800	commit: Maybe this will get the new module files in
+7e5844fa31f588007f270313f53e9f4b1b0e7276 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361122958 -0800	commit: ...just a test
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 67065701f66471b3043e10b0f65407df6e6bd455 Chris Dewinetz <queror@hotmail.com> 1361254607 -0800	commit: Copied page to page--front
+67065701f66471b3043e10b0f65407df6e6bd455 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361254769 -0800	checkout: moving from beccibase to customfrontpage
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 67065701f66471b3043e10b0f65407df6e6bd455 Chris Dewinetz <queror@hotmail.com> 1361255127 -0800	checkout: moving from customfrontpage to beccibase
+67065701f66471b3043e10b0f65407df6e6bd455 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361255154 -0800	Update from GitX
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 67065701f66471b3043e10b0f65407df6e6bd455 Chris Dewinetz <queror@hotmail.com> 1361255197 -0800	checkout: moving from beccibase to customfrontpage
+67065701f66471b3043e10b0f65407df6e6bd455 9764d0613d794b1e926a16522348a52a142fb7a0 Chris Dewinetz <queror@hotmail.com> 1361261313 -0800	commit: updated frontpage to include becci layers
+9764d0613d794b1e926a16522348a52a142fb7a0 e3a83d12f40d76f12200be65948f776c84796982 Chris Dewinetz <queror@hotmail.com> 1361262596 -0800	commit: fixed positioning of overlay graphic
+e3a83d12f40d76f12200be65948f776c84796982 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361262979 -0800	checkout: moving from customfrontpage to dev
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361263012 -0800	checkout: moving from dev to mergetest
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 fbf38346d0c6742ef837b55447abd79eb6acba6a Chris Dewinetz <queror@hotmail.com> 1361263038 -0800	merge customfrontpage: Merge made by the 'recursive' strategy.
+fbf38346d0c6742ef837b55447abd79eb6acba6a 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361263128 -0800	checkout: moving from mergetest to dev
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 67c53b68b59ccceafb4c27c5033b22703f236221 Chris Dewinetz <queror@hotmail.com> 1361263181 -0800	merge customfrontpage: Merge made by the 'recursive' strategy.
+67c53b68b59ccceafb4c27c5033b22703f236221 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361264137 -0800	checkout: moving from dev to staging
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 184967728907cd3053e0d5a85556497535df5bd0 Chris Dewinetz <queror@hotmail.com> 1361264190 -0800	merge dev: Merge made by the 'recursive' strategy.
+184967728907cd3053e0d5a85556497535df5bd0 67c53b68b59ccceafb4c27c5033b22703f236221 Chris Dewinetz <queror@hotmail.com> 1361265181 -0800	checkout: moving from staging to dev
+67c53b68b59ccceafb4c27c5033b22703f236221 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361265437 -0800	checkout: moving from dev to production
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361265465 -0800	checkout: moving from production to prodtwo
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 50288d2a66811f6c4cddb2f78d7a9751e5a3cef7 Chris Dewinetz <queror@hotmail.com> 1361265514 -0800	merge customfrontpage: Merge made by the 'recursive' strategy.
+50288d2a66811f6c4cddb2f78d7a9751e5a3cef7 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361345799 -0800	Update from GitX
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 e3a83d12f40d76f12200be65948f776c84796982 Chris Dewinetz <queror@hotmail.com> 1361345823 -0800	checkout: moving from prodtwo to customfrontpage
+e3a83d12f40d76f12200be65948f776c84796982 2f359e383a41dc4deed5db50798eec69ae35a99c Chris Dewinetz <queror@hotmail.com> 1361346077 -0800	commit: tweaked the position of front overlay graphic
+2f359e383a41dc4deed5db50798eec69ae35a99c 2f359e383a41dc4deed5db50798eec69ae35a99c Chris Dewinetz <queror@hotmail.com> 1361346360 -0800	checkout: moving from customfrontpage to prodtwo
+2f359e383a41dc4deed5db50798eec69ae35a99c 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361346409 -0800	Update from GitX
+0000000000000000000000000000000000000000 2f359e383a41dc4deed5db50798eec69ae35a99c Chris Dewinetz <queror@hotmail.com> 1361346471 -0800	checkout: moving from prodtwo to customfrontpage
+2f359e383a41dc4deed5db50798eec69ae35a99c 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361346482 -0800	checkout: moving from customfrontpage to production
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361346510 -0800	checkout: moving from production to pord2
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 67c53b68b59ccceafb4c27c5033b22703f236221 Chris Dewinetz <queror@hotmail.com> 1361346575 -0800	checkout: moving from pord2 to dev
+67c53b68b59ccceafb4c27c5033b22703f236221 4d2ad71d420d15f6a78b012e7cdcd0b4b1bc0717 Chris Dewinetz <queror@hotmail.com> 1361346587 -0800	merge customfrontpage: Merge made by the 'recursive' strategy.
+4d2ad71d420d15f6a78b012e7cdcd0b4b1bc0717 c1cb632dba3ba564185e7d7369404bc2145a80cd Chris Dewinetz <queror@hotmail.com> 1361434121 -0800	commit: finLLY got it working!
+c1cb632dba3ba564185e7d7369404bc2145a80cd 184967728907cd3053e0d5a85556497535df5bd0 Chris Dewinetz <queror@hotmail.com> 1361434828 -0800	checkout: moving from dev to staging
+184967728907cd3053e0d5a85556497535df5bd0 fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 Chris Dewinetz <queror@hotmail.com> 1361434969 -0800	merge dev: Merge made by the 'recursive' strategy.
+fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361435090 -0800	checkout: moving from staging to production
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 Chris Dewinetz <queror@hotmail.com> 1361435105 -0800	merge staging: Fast-forward
+fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 c1cb632dba3ba564185e7d7369404bc2145a80cd Chris Dewinetz <queror@hotmail.com> 1361612662 -0800	checkout: moving from production to dev
+c1cb632dba3ba564185e7d7369404bc2145a80cd 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361612819 -0800	checkout: moving from dev to beccibase
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 Chris Dewinetz <queror@hotmail.com> 1361613183 -0800	checkout: moving from beccibase to production
+fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 c1cb632dba3ba564185e7d7369404bc2145a80cd Chris Dewinetz <queror@hotmail.com> 1361672068 -0800	checkout: moving from production to dev
+c1cb632dba3ba564185e7d7369404bc2145a80cd c1cb632dba3ba564185e7d7369404bc2145a80cd Chris Dewinetz <queror@hotmail.com> 1361672097 -0800	checkout: moving from dev to updatetest
+c1cb632dba3ba564185e7d7369404bc2145a80cd 99eb29f71f224f164dca9a63f6efd7c8108a5ff7 Chris Dewinetz <queror@hotmail.com> 1361672134 -0800	pull origin 7.20: Merge made by the 'recursive' strategy.
+99eb29f71f224f164dca9a63f6efd7c8108a5ff7 fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 Chris Dewinetz <queror@hotmail.com> 1361672331 -0800	checkout: moving from updatetest to production
+fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 c1cb632dba3ba564185e7d7369404bc2145a80cd Chris Dewinetz <queror@hotmail.com> 1361730389 -0800	checkout: moving from production to dev
+c1cb632dba3ba564185e7d7369404bc2145a80cd 7c44c3312a97de9efd6328f7eb1e21c7a5be8248 Chris Dewinetz <queror@hotmail.com> 1361730574 -0800	commit: moved the main menu region into the header region so that we can have the secondary menus as tabs (which only happens if the menu is in the main-menu block) which appear over top of the header graphic.
+7c44c3312a97de9efd6328f7eb1e21c7a5be8248 fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 Chris Dewinetz <queror@hotmail.com> 1361730874 -0800	checkout: moving from dev to staging
+fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 b097a9fb0f0575f2799b1a5d2e29681d13fa441d Chris Dewinetz <queror@hotmail.com> 1361730886 -0800	merge dev: Merge made by the 'recursive' strategy.
+b097a9fb0f0575f2799b1a5d2e29681d13fa441d fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 Chris Dewinetz <queror@hotmail.com> 1361730943 -0800	checkout: moving from staging to production
+fa6f6a8147bed1b6e97a72ed5a0df6d2194e9ee3 98a2bc240ee0e9c2834e053f3ec7bff747b8e347 Chris Dewinetz <queror@hotmail.com> 1361730956 -0800	merge staging: Merge made by the 'recursive' strategy.
+98a2bc240ee0e9c2834e053f3ec7bff747b8e347 3a24da1b40f5e05876ad7775044500b61eb2ed94 Chris Dewinetz <queror@hotmail.com> 1361731108 -0800	checkout: moving from production to 7.20
+3a24da1b40f5e05876ad7775044500b61eb2ed94 7c44c3312a97de9efd6328f7eb1e21c7a5be8248 Chris Dewinetz <queror@hotmail.com> 1361731135 -0800	checkout: moving from 3a24da1b40f5e05876ad7775044500b61eb2ed94 to 7c44c3312a97de9efd6328f7eb1e21c7a5be8248^0
+7c44c3312a97de9efd6328f7eb1e21c7a5be8248 5d04c17f3a8e5158e8d0e417153d35b99fa9455d Chris Dewinetz <queror@hotmail.com> 1361731136 -0800	rebase: Drupal 7.20
+5d04c17f3a8e5158e8d0e417153d35b99fa9455d 7c44c3312a97de9efd6328f7eb1e21c7a5be8248 Chris Dewinetz <queror@hotmail.com> 1361731304 -0800	checkout: moving from 5d04c17f3a8e5158e8d0e417153d35b99fa9455d to dev
+7c44c3312a97de9efd6328f7eb1e21c7a5be8248 2bd30a990a4c9ac408c1d077dd40002f39035fae Chris Dewinetz <queror@hotmail.com> 1361731364 -0800	merge 7.20: Merge made by the 'recursive' strategy.
+2bd30a990a4c9ac408c1d077dd40002f39035fae b097a9fb0f0575f2799b1a5d2e29681d13fa441d Chris Dewinetz <queror@hotmail.com> 1361731426 -0800	checkout: moving from dev to staging
+b097a9fb0f0575f2799b1a5d2e29681d13fa441d e6f0cb1634e15f6f0f783c7f52cb416379af090a Chris Dewinetz <queror@hotmail.com> 1361731436 -0800	merge dev: Merge made by the 'recursive' strategy.
+e6f0cb1634e15f6f0f783c7f52cb416379af090a 98a2bc240ee0e9c2834e053f3ec7bff747b8e347 Chris Dewinetz <queror@hotmail.com> 1361731469 -0800	checkout: moving from staging to production
+98a2bc240ee0e9c2834e053f3ec7bff747b8e347 93ead59e2db95f074ec4bbdd705977bf43db1582 Chris Dewinetz <queror@hotmail.com> 1361731480 -0800	merge staging: Merge made by the 'recursive' strategy.
+93ead59e2db95f074ec4bbdd705977bf43db1582 2bd30a990a4c9ac408c1d077dd40002f39035fae Chris Dewinetz <queror@hotmail.com> 1361857917 -0800	checkout: moving from production to dev
+2bd30a990a4c9ac408c1d077dd40002f39035fae 295bd039d57ac48489c1907a35d6a9ac54d890ae Chris Dewinetz <queror@hotmail.com> 1361865978 -0800	commit: motif banner is now working
+295bd039d57ac48489c1907a35d6a9ac54d890ae 295bd039d57ac48489c1907a35d6a9ac54d890ae Chris Dewinetz <queror@hotmail.com> 1362124484 -0800	checkout: moving from dev to feat_remaxfooter
+295bd039d57ac48489c1907a35d6a9ac54d890ae bb70f7a0f318bbf13de0b01577b87e7d96ab12e7 Chris Dewinetz <queror@hotmail.com> 1362211195 -0800	commit: Removed content from front.tpl. Added tiny ReMax logo for footer (see notes)
+bb70f7a0f318bbf13de0b01577b87e7d96ab12e7 295bd039d57ac48489c1907a35d6a9ac54d890ae Chris Dewinetz <queror@hotmail.com> 1362211220 -0800	checkout: moving from feat_remaxfooter to dev
+295bd039d57ac48489c1907a35d6a9ac54d890ae a46a33017b7ee6e36c186e7add32dc073b062721 Chris Dewinetz <queror@hotmail.com> 1362211526 -0800	merge feat_remaxfooter: Merge made by the 'recursive' strategy.
+a46a33017b7ee6e36c186e7add32dc073b062721 f512c23734903885c844139254da2776aff01193 Chris Dewinetz <queror@hotmail.com> 1362219418 -0800	commit: Removed logo. Added Impact as site name font.
+f512c23734903885c844139254da2776aff01193 f512c23734903885c844139254da2776aff01193 Chris Dewinetz <queror@hotmail.com> 1362723701 -0800	checkout: moving from dev to feat_headerPageTPL
+f512c23734903885c844139254da2776aff01193 122379b3b416fe7b2a0225f6156fd82bfd9abacf Chris Dewinetz <queror@hotmail.com> 1362724177 -0800	commit: fixed header layout shadowed version of name
+122379b3b416fe7b2a0225f6156fd82bfd9abacf f512c23734903885c844139254da2776aff01193 Chris Dewinetz <queror@hotmail.com> 1362724194 -0800	checkout: moving from feat_headerPageTPL to dev
+f512c23734903885c844139254da2776aff01193 4a6233b43cebab7779a62d1a95f44e9926a08766 Chris Dewinetz <queror@hotmail.com> 1362724529 -0800	merge feat_headerPageTPL: Merge made by the 'recursive' strategy.
+4a6233b43cebab7779a62d1a95f44e9926a08766 5cb177343ce701b72db5c11d903e9b9bf589f3a2 Chris Dewinetz <queror@hotmail.com> 1362729258 -0800	commit: various bullet fixes
+5cb177343ce701b72db5c11d903e9b9bf589f3a2 5cb177343ce701b72db5c11d903e9b9bf589f3a2 Chris Dewinetz <queror@hotmail.com> 1362803574 -0800	checkout: moving from dev to feat_removeLogo
+5cb177343ce701b72db5c11d903e9b9bf589f3a2 02ca2cf7c3fd279cd362a8c1440fb09dd1e105f4 Chris Dewinetz <queror@hotmail.com> 1362804622 -0800	commit: Removed logo and some more bullets
+02ca2cf7c3fd279cd362a8c1440fb09dd1e105f4 5cb177343ce701b72db5c11d903e9b9bf589f3a2 Chris Dewinetz <queror@hotmail.com> 1362804660 -0800	checkout: moving from feat_removeLogo to dev
+5cb177343ce701b72db5c11d903e9b9bf589f3a2 f972a5a46d57cf7a4dcee78fa377eef4a5441505 Chris Dewinetz <queror@hotmail.com> 1362804691 -0800	merge feat_removeLogo: Merge made by the 'recursive' strategy.
+f972a5a46d57cf7a4dcee78fa377eef4a5441505 be8bd984c2dacb441e5b47d4f6a1c14bcc7a0cc4 Chris Dewinetz <queror@hotmail.com> 1362807602 -0800	commit: Added cacheflusher module to get shortcut
+be8bd984c2dacb441e5b47d4f6a1c14bcc7a0cc4 be8bd984c2dacb441e5b47d4f6a1c14bcc7a0cc4 Chris Dewinetz <queror@hotmail.com> 1444851512 -0700	checkout: moving from dev to my-new-branch
+be8bd984c2dacb441e5b47d4f6a1c14bcc7a0cc4 00312c972be6c736ef1c9b8a3c0f96128f057d51 Chris Dewinetz <queror@hotmail.com> 1444851740 -0700	commit: lots of changes
+00312c972be6c736ef1c9b8a3c0f96128f057d51 5381267d969acc9e8f137d3ff80d14cf2a1199bc Chris Dewinetz <queror@hotmail.com> 1444854107 -0700	commit: lot of changes cont
+5381267d969acc9e8f137d3ff80d14cf2a1199bc 66ed6124db930fc6cd55dc861cf9ddf09c64b364 Chris Dewinetz <queror@hotmail.com> 1444854189 -0700	commit: lots of changes cont 2
+66ed6124db930fc6cd55dc861cf9ddf09c64b364 237be275143dda0e358992a67e6644db4ea59859 Chris Dewinetz <queror@hotmail.com> 1444854497 -0700	commit: lots of changes cont 3
+237be275143dda0e358992a67e6644db4ea59859 d99c41ac7a4adcc33bb140bc0d6e354c75d57c06 Chris Dewinetz <queror@hotmail.com> 1444854800 -0700	commit: lots of changes cont 4
+d99c41ac7a4adcc33bb140bc0d6e354c75d57c06 e6117c17ffcb791d0d07828b843cfc842b9e303c Chris Dewinetz <queror@hotmail.com> 1444854899 -0700	commit: lots of changes cont 5
+e6117c17ffcb791d0d07828b843cfc842b9e303c b00aa38cc50d1e151c0c3b4f208dbf14b799df9f Chris Dewinetz <queror@hotmail.com> 1444855161 -0700	commit: lots of changes cont 6
+b00aa38cc50d1e151c0c3b4f208dbf14b799df9f e2de8c4ec545bd9b15587e3b154181674dc0bdcb Chris Dewinetz <queror@hotmail.com> 1444855192 -0700	commit: lots of changes cont 7
+e2de8c4ec545bd9b15587e3b154181674dc0bdcb 6c2f367f3ae45d8229e80be203cbde2a6751ba95 Chris Dewinetz <queror@hotmail.com> 1444855309 -0700	commit: lots of changes cont 8

@@ -1,0 +1,9 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js
+sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js
+sites/all/modules/nice_menus/superfish/js/superfish.js

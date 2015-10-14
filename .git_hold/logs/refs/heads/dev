@@ -1,0 +1,13 @@
+0000000000000000000000000000000000000000 67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 Chris Dewinetz <queror@hotmail.com> 1361123528 -0800	Create branch from GitX
+67d41cd40e6f0e9364b7b0ab4c4fe5428bfa3e65 67c53b68b59ccceafb4c27c5033b22703f236221 Chris Dewinetz <queror@hotmail.com> 1361263181 -0800	merge customfrontpage: Merge made by the 'recursive' strategy.
+67c53b68b59ccceafb4c27c5033b22703f236221 4d2ad71d420d15f6a78b012e7cdcd0b4b1bc0717 Chris Dewinetz <queror@hotmail.com> 1361346587 -0800	merge customfrontpage: Merge made by the 'recursive' strategy.
+4d2ad71d420d15f6a78b012e7cdcd0b4b1bc0717 c1cb632dba3ba564185e7d7369404bc2145a80cd Chris Dewinetz <queror@hotmail.com> 1361434121 -0800	commit: finLLY got it working!
+c1cb632dba3ba564185e7d7369404bc2145a80cd 7c44c3312a97de9efd6328f7eb1e21c7a5be8248 Chris Dewinetz <queror@hotmail.com> 1361730574 -0800	commit: moved the main menu region into the header region so that we can have the secondary menus as tabs (which only happens if the menu is in the main-menu block) which appear over top of the header graphic.
+7c44c3312a97de9efd6328f7eb1e21c7a5be8248 2bd30a990a4c9ac408c1d077dd40002f39035fae Chris Dewinetz <queror@hotmail.com> 1361731364 -0800	merge 7.20: Merge made by the 'recursive' strategy.
+2bd30a990a4c9ac408c1d077dd40002f39035fae 295bd039d57ac48489c1907a35d6a9ac54d890ae Chris Dewinetz <queror@hotmail.com> 1361865978 -0800	commit: motif banner is now working
+295bd039d57ac48489c1907a35d6a9ac54d890ae a46a33017b7ee6e36c186e7add32dc073b062721 Chris Dewinetz <queror@hotmail.com> 1362211526 -0800	merge feat_remaxfooter: Merge made by the 'recursive' strategy.
+a46a33017b7ee6e36c186e7add32dc073b062721 f512c23734903885c844139254da2776aff01193 Chris Dewinetz <queror@hotmail.com> 1362219418 -0800	commit: Removed logo. Added Impact as site name font.
+f512c23734903885c844139254da2776aff01193 4a6233b43cebab7779a62d1a95f44e9926a08766 Chris Dewinetz <queror@hotmail.com> 1362724529 -0800	merge feat_headerPageTPL: Merge made by the 'recursive' strategy.
+4a6233b43cebab7779a62d1a95f44e9926a08766 5cb177343ce701b72db5c11d903e9b9bf589f3a2 Chris Dewinetz <queror@hotmail.com> 1362729258 -0800	commit: various bullet fixes
+5cb177343ce701b72db5c11d903e9b9bf589f3a2 f972a5a46d57cf7a4dcee78fa377eef4a5441505 Chris Dewinetz <queror@hotmail.com> 1362804691 -0800	merge feat_removeLogo: Merge made by the 'recursive' strategy.
+f972a5a46d57cf7a4dcee78fa377eef4a5441505 be8bd984c2dacb441e5b47d4f6a1c14bcc7a0cc4 Chris Dewinetz <queror@hotmail.com> 1362807602 -0800	commit: Added cacheflusher module to get shortcut
