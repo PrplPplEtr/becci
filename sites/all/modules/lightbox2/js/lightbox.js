@@ -21,8 +21,8 @@ var Lightbox;
 (function($) {
 Lightbox = {
   auto_modal : false,
-  overlayOpacity : 0.8, // Controls transparency of shadow overlay.
-  overlayColor : '000', // Controls colour of shadow overlay.
+  overlayOpacity : 0.8, // Controls transparency of shadow overlay. This is ignored in Drupal. Use config/lightbox2.
+  overlayColor : 'FFF', // Controls colour of shadow overlay. This is ignored in Drupal. Use config/lightbox2.
   disableCloseClick : true,
   // Controls the order of the lightbox resizing animation sequence.
   resizeSequence: 0, // 0: simultaneous, 1: width then height, 2: height then width.
@@ -149,6 +149,7 @@ Lightbox = {
     var hoverNav = '<div id="hoverNav"><a id="prevLink" title="' + Drupal.t('Previous') + '" href="#"></a><a id="nextLink" title="' + Drupal.t('Next') + '" href="#"></a></div>';
     var frameNav = '<div id="frameHoverNav"><a id="framePrevLink" title="' + Drupal.t('Previous') + '" href="#"></a><a id="frameNextLink" title="' + Drupal.t('Next') + '" href="#"></a></div>';
     var caption = '<span id="caption"></span>';
+    var blurb = '<div id="blurb"></div>';
     var numberDisplay = '<span id="numberDisplay"></span>';
     var close = '<a id="bottomNavClose" title="' + Drupal.t('Close') + '" href="#"></a>';
     var zoom = '<a id="bottomNavZoom" href="#"></a>';
@@ -161,7 +162,7 @@ Lightbox = {
     if (!s.use_alt_layout) {
       $('#imageContainer').append(image + hoverNav);
       $('#imageData').append(details + bottomNav);
-      $('#imageDetails').append(caption + numberDisplay);
+      $('#imageDetails').append(caption+blurb + numberDisplay);
       $('#bottomNav').append(frameNav + close + zoom + zoomOut + pause + play);
     }
     else {
@@ -169,7 +170,7 @@ Lightbox = {
       $('#imageContainer').append(image);
       $('#bottomNav').append(close + zoom + zoomOut);
       $('#imageData').append(hoverNav + details);
-      $('#imageDetails').append(caption + numberDisplay + pause + play);
+      $('#imageDetails').append(caption +blurb+ numberDisplay + pause + play);
     }
 
     // Setup onclick handlers.
@@ -315,6 +316,7 @@ Lightbox = {
     var rel = rel_parts["rel"];
     var rel_group = rel_parts["group"];
     var title = (rel_parts["title"] ? rel_parts["title"] : imageLink.title);
+    var caption = (rel_parts["caption"] ? rel_parts["caption"] : null);
     var rel_style = null;
     var i = 0;
 
@@ -336,18 +338,18 @@ Lightbox = {
 
     if ($(imageLink).attr('id') == 'lightboxAutoModal') {
       rel_style = rel_parts["style"];
-      Lightbox.imageArray.push(['#lightboxAutoModal > *', title, alt, rel_style, 1]);
+      Lightbox.imageArray.push(['#lightboxAutoModal > *', title, alt, rel_style, 1,caption]);
     }
     else {
       // Handle lightbox images with no grouping.
       if ((rel == 'lightbox' || rel == 'lightshow') && !rel_group) {
-        Lightbox.imageArray.push([imageLink.href, title, alt]);
+        Lightbox.imageArray.push([imageLink.href, title, alt,false,false,caption]);
       }
 
       // Handle other items with no grouping.
       else if (!rel_group) {
         rel_style = rel_parts["style"];
-        Lightbox.imageArray.push([imageLink.href, title, alt, rel_style]);
+        Lightbox.imageArray.push([imageLink.href, title, alt, rel_style,caption]);
       }
 
       // Handle grouped items.
@@ -374,7 +376,7 @@ Lightbox = {
                 if (Lightbox.isLightframe || Lightbox.isModal || Lightbox.isVideo) {
                   rel_style = rel_data["style"];
                 }
-                Lightbox.imageArray.push([anchor.href, anchor_title, img_alt, rel_style]);
+                Lightbox.imageArray.push([anchor.href, anchor_title, img_alt, rel_style,false,rel_data['caption']]);
               }
             }
           }
@@ -723,9 +725,12 @@ Lightbox = {
     var s = Drupal.settings.lightbox2;
 
     if (s.show_caption) {
-      var caption = Lightbox.filterXSS(Lightbox.imageArray[Lightbox.activeImage][1]);
-      if (!caption) caption = '';
-      $('#caption').html(caption).css({'zIndex': '10500'}).show();
+        var caption = Lightbox.filterXSS(Lightbox.imageArray[Lightbox.activeImage][1]);
+        if (!caption) caption = '';
+        var blurb = Lightbox.filterXSS(Lightbox.imageArray[Lightbox.activeImage][5]);
+        if (!blurb) blurb = '';
+        $('#caption').html(caption).css({'zIndex': '10500'}).show();
+        $('#blurb').html(blurb).css({'zIndex': '10500'}).show();
     }
 
     // If image is part of set display 'Image x of x'.
@@ -1058,7 +1063,7 @@ Lightbox = {
   // parseRel()
   parseRel: function (link) {
     var parts = [];
-    parts["rel"] = parts["title"] = parts["group"] = parts["style"] = parts["flashvars"] = null;
+    parts["rel"] =parts["title"] = parts["group"] = parts["style"] = parts["flashvars"]= parts["caption"] = null;
     if (!$(link).attr('rel')) return parts;
     parts["rel"] = $(link).attr('rel').match(/\w+/)[0];
 
@@ -1073,6 +1078,9 @@ Lightbox = {
     if ($(link).attr('rel').match(/\[.*\]\[(.*)\]/)) {
       parts["title"] = $(link).attr('rel').match(/\[.*\]\[(.*)\]/)[1];
     }
+    
+    parts["caption"]= $(link).find('p').first().text();
+    
     return parts;
   },
 
