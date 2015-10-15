@@ -1899,3 +1899,24 @@ width:960px;
     background-color: rgba(0,0,0,.5);
     box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
+
+.external_resource_row{
+	margin:10px;
+	padding:10px;
+}
+.external_resource_row_data{
+
+}
+.external_resource_row_image{
+	float:left;
+	width:30%;
+	height:80px;
+	text-align:center;
+	margin:auto;
+}
+.external_resource_row_title{
+	font-size:1.5em;
+}
+.external_resource_row_body{
+	
+}
