@@ -21,6 +21,10 @@
   margin: 0 auto;
   min-width: 240px;
   overflow: hidden;
+  border-top:1px solid #144A6E;
+  border-left:1px solid #144A6E;
+  border-right:1px solid #144A6E;
+  
 }
 
 #imageContainer, #frameContainer, #modalContainer {
@@ -148,6 +152,9 @@
   margin: 0 auto;
   line-height: 1.4em;
   min-width: 240px;
+  border-bottom:1px solid #144A6E;
+  border-left:1px solid #144A6E;
+  border-right:1px solid #144A6E;
 }
 
 #imageData {
@@ -162,6 +169,13 @@
 
 #imageData #caption {
   font-weight: bold;
+  font-size:1.5em;
+  color:#144A6E;
+}
+#imageData #blurb {
+  font-size:1.2em;
+  line-height:1em;
+  color:#144A6E;
 }
 
 #imageData #numberDisplay {
