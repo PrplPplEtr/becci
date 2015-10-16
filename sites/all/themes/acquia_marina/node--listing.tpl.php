@@ -33,15 +33,10 @@
 	    	<div class="listing_address"><?php print $variables['field_address'][0]['value'];?></div>
 	    	<div class="listing_location"><?php print $variables['field_city'][0]['taxonomy_term']->name; if(!empty($variables['field_borough'])){print ' - '.$variables['field_borough'][0]['taxonomy_term']->name;};?></div>
 	    	<div class="listing_price"><?php print render($content['field_price'][0]);?></div>
+	    	<?php if($variables['body']):?>
 	    	<div class="listing_description"><?php print $variables['body'][0]['value'];?></div>
+	    	<?php endif;?>
 		</div>
-    </div>
-    <div class="listing_galleryimages">
-    	<?php foreach($content['field_gallery'] as $key=>$value){
-	    	if(is_int($key)){
-	    		//print '<div class="listing_galleryimage">'.render($content['field_gallery'][$key]).'</div>';
-	    	}
-    	} ?>
     </div>
   </div>
 
