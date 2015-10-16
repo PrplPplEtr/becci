@@ -1,0 +1,10 @@
+When this site is installed, it WILL NOT WORK until changes are made to the DNS.
+
+The Domain_Access module will break the site if the following domains are not set
+up to resolve to the site directory:
+
+-becci.ca.loc
+-condosatthequay.com
+-sellingnewwesthomes.com
+
+The becci.ca.loc site is set up as the defualt domain. It will need to be modified to becci.ca.
