@@ -1771,7 +1771,7 @@ width:960px;
 
 }
 
-.listing_mainimage{
+.listing_mainimage,.complex_mainimage{
 	padding:8px;
 	border:1px solid #D6DDB9;
 	margin:0px 5px 0px 0px;
@@ -1945,4 +1945,11 @@ width:960px;
 }
 .external_resource_row_body{
 	
+}
+
+
+
+
+.complex_mainimage .panel-overlay{
+	bottom:.5em !important;
 }
