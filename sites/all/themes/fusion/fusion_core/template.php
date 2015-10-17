@@ -301,9 +301,12 @@ function fusion_core_preprocess_node(&$vars) {
     $vars[$region] = isset($node_region_blocks[$region]) ? $node_region_blocks[$region] : array();
   }
   
-  
+
         if ($vars['type']=='listing') {
         	parse_listing_fields($vars);
+        }
+        if ($vars['type']=='complex') {
+        	parse_complex_fields($vars);
         }
         
 }
@@ -527,7 +530,7 @@ function fusion_core_theme_paths($theme) {
 
 function parse_listing_fields(&$vars){
 	//drupal_set_message('<pre>' . print_r($vars['content'], true) . '</pre>');
-		$root_specification_field_keys=array('price','gallery','city','borough','address');
+		$root_specification_field_keys=array('price','gallery','city','borough','address','complex');
 		$primary_specification_field_keys=array('bedrooms','bathrooms','listing_type','floor_area','year_of_construction');
 		$secondary_specification_field_keys=array();
 		
@@ -543,4 +546,32 @@ function parse_listing_fields(&$vars){
         
         $vars['primary_specification_fields']=$primary_specification_field_keys;
         $vars['secondary_specification_fields']=$secondary_specification_field_keys;
+}
+function parse_complex_fields(&$vars){
+	//drupal_set_message('<pre>' . print_r($vars['content'], true) . '</pre>');
+		$root_specification_field_keys=array('gallery','city','borough','address');
+		$primary_specification_field_keys=array();
+		$secondary_specification_field_keys=array();
+		
+		foreach($vars['content'] as $key=>$value){
+			if(strpos($key,'field_')!==false){
+				$newKey=substr($key,6);// strip 'field_' from the key
+				if(!in_array($newKey, $primary_specification_field_keys)&&!in_array($newKey, $root_specification_field_keys)){
+					$secondary_specification_field_keys[]=$newKey;
+				}
+			}
+		}
+		
+        
+        $vars['primary_specification_fields']=$primary_specification_field_keys;
+        $vars['secondary_specification_fields']=$secondary_specification_field_keys;
+        
+        //Add the listings view
+		
+		$block = block_load('views', 'listings_by_complex-block');
+		$render_blocks=_block_render_blocks(array($block));
+		$render_array=_block_get_renderable_array($render_blocks);
+		$vars['listings_view']=drupal_render($render_array);
+        
+       // $vars['listings_view'] =views_embed_view('listings_by_complex', 'block', $vars['nid']);
 }
