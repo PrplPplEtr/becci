@@ -52,4 +52,22 @@ Drupal.behaviors.fusionOverlabel = {
   }
 };
 
+Drupal.behaviors.listingActions={
+	attach:function(context,settings){
+	$( "#block-webform-client-block-21" ).hide( ).addClass('hidden');
+	$(".tell_btn,#block-webform-client-block-21 .webform-component--cancel-button input").click(function(event) {
+		event.preventDefault();
+		$( "#block-webform-client-block-21" ).toggle('blind');
+		$( "#block-webform-client-block-22" ).hide('blind');
+	});
+	
+	$( "#block-webform-client-block-22" ).hide( ).addClass('hidden');
+	$(".info_btn,#block-webform-client-block-22 .webform-component--cancel-button input").click(function(event) {
+		event.preventDefault();
+		$( "#block-webform-client-block-22" ).toggle('blind');
+		$( "#block-webform-client-block-21" ).hide('blind');
+	});
+	}
+};
+
 })(jQuery);

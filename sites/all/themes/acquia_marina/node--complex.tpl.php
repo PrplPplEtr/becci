@@ -1,5 +1,24 @@
 <?php
+if($teaser):
 ?>
+<h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+<?php //print render($content);?>
+<?php //dpm($content);?>
+
+    <div class="complex_teaser_head">
+	    <div class="complex_mainimage">
+	    	<?php print render($content['field_gallery'][0]); ?>
+	    </div>
+	    
+	    <div class="complex_teaser_head_data">
+	    	<?php print render($content['links']); ?>
+	    	<?php print render($content['field_listing_type']); ?>
+	    	<?php print render($content['field_construction_material']); ?>
+	    	<?php print render($content['field_management_company']); ?>
+	    </div>
+	    	<?php print render($content['body']); ?>
+    </div>
+<?php else: ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
@@ -58,6 +77,7 @@
   </div>
 
 </div>
+<?php endif; ?>
 <?php
  //print '<pre>';
   //dpm($variables);

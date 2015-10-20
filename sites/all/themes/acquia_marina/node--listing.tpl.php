@@ -21,7 +21,10 @@
       hide($content['links']);
       //print render($content);
     ?>
-    
+    <div class="contact_btns">
+    <div class="btn_container"><?php print $tell_a_friend; ?></div>
+    <div class="btn_container"><?php print $more_info; ?></div>
+    </div>
     <div class="listing_head">
 	    <div class="listing_mainimage">
 	    	<?php if($variables['field_sold']['und'][0]['value']): ?>
@@ -33,9 +36,7 @@
 	    	<div class="listing_address"><?php print $variables['field_address'][0]['value'];?></div>
 	    	<div class="listing_location"><?php print $variables['field_city'][0]['taxonomy_term']->name; if(!empty($variables['field_borough'])){print ' - '.$variables['field_borough'][0]['taxonomy_term']->name;};?></div>
 	    	<div class="listing_price"><?php print render($content['field_price'][0]);?></div>
-	    	<?php if($variables['field_complex']):?>
-	    	<div class="listing_description"><?php print render($content['field_complex']);?></div>
-	    	<?php endif;?>
+
 	    	<?php if($variables['body']):?>
 	    	<div class="listing_description"><?php print $variables['body'][0]['value'];?></div>
 	    	<?php endif;?>
@@ -57,6 +58,11 @@
 			    	print '<div class="listing_'.$key.'">'.render($content['field_'.$key]).'</div>';
 			    	//print render($value);
 		    	} ?>
+	    	</div>
+	    	<div class="listing_specs_col">
+	    		<?php if($variables['field_complex']):?>
+	    			<?php print render($content['field_complex']);?>
+	    		<?php endif;?>
 	    	</div>
 	    </div>
   <div class="clearfix">

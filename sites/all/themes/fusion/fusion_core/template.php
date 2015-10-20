@@ -546,6 +546,11 @@ function parse_listing_fields(&$vars){
         
         $vars['primary_specification_fields']=$primary_specification_field_keys;
         $vars['secondary_specification_fields']=$secondary_specification_field_keys;
+        
+        $tellafriendbutton= l(t('Tell a friend'), '', $options = array('attributes' => array('class' => array('btn','tell_btn'), 'name' => 'tell_button')));
+        $vars['tell_a_friend']=$tellafriendbutton;
+        $moreinfobutton= l(t('Request more information'), '', $options = array('fragment' => 'block-webform-client-block-21', 'external' => TRUE,'attributes' => array('class' => array('btn','info_btn'), 'name' => 'info_button')));
+        $vars['more_info']=$moreinfobutton;
 }
 function parse_complex_fields(&$vars){
 	//drupal_set_message('<pre>' . print_r($vars['content'], true) . '</pre>');
@@ -573,5 +578,18 @@ function parse_complex_fields(&$vars){
 		$render_array=_block_get_renderable_array($render_blocks);
 		$vars['listings_view']=drupal_render($render_array);
         
+		$node=$vars['node'];
+		$images = field_get_items('node', $node, 'field_gallery');
+	    if ($images) {
+	      $main_image = field_view_value('node', $node, 'field_gallery', $images[0], 
+	        array(
+	          'type' => 'image',
+	          'settings' => array(
+	          'image_style' => 'thumbnail',
+	          'image_link' => '',
+	        ),
+	      ));
+	      $vars['main_image'] = $main_image; 
+	    }
        // $vars['listings_view'] =views_embed_view('listings_by_complex', 'block', $vars['nid']);
 }
